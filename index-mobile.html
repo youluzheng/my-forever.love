@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="heart_home.ico">
+    <title>小郑和小吴的时光驿站</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #dcfefd;
+        }
+
+        #lawn {
+            position: absolute;
+            width: 100%;
+            height: 15%;
+            background: #a0d64f;
+            bottom: 0%;
+        }
+
+        #lawn1 {
+            position: absolute;
+            width: 100%;
+            height: 5%;
+            background: #a0d64f;
+            border-radius: 90% 90% 0 0;
+            bottom: 14%;
+        }
+
+
+        @keyframes left-right {
+            0% {
+                transform: translate(0%, 0%);
+            }
+
+            100% {
+                transform: translate(200%, 0%);
+            }
+
+        }
+
+
+        @keyframes left-right {
+            0% {
+                transform: translate(0%, 0%);
+            }
+
+            50% {
+                transform: translate(70%, 0%);
+            }
+
+            100% {
+                transform: translate(0%, 0%);
+            }
+
+        }
+
+        #cloud-mid1 {
+            position: absolute;
+            width: 45%;
+            top: 43%;
+            left: 2%;
+            animation: left-right 60s infinite;
+        }
+
+
+        @keyframes right-left {
+            0% {
+                transform: translate(0%, 0%);
+            }
+
+            50% {
+                transform: translate(-70%, 0%);
+            }
+
+            100% {
+                transform: translate(0%, 0%);
+            }
+
+        }
+
+        #cloud-mid2 {
+            position: absolute;
+            width: 42%;
+            top: 28%;
+            right: 4%;
+            animation: right-left 60s infinite;
+        }
+
+
+        @keyframes rotation {
+
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+
+        }
+
+        #sun {
+            position: absolute;
+            width: 50%;
+            animation: rotation 6s linear infinite;
+        }
+
+
+        #tree {
+            position: absolute;
+            width: 72%;
+            bottom: 3%;
+        }
+
+        #glass-left1 {
+            position: absolute;
+            width: 15%;
+            bottom: 0%;
+        }
+
+        #glass-left2 {
+            position: absolute;
+            width: 25%;
+            bottom: 0%;
+        }
+
+        #flower1 {
+            position: absolute;
+            width: 19%;
+            left: 27%;
+            bottom: 0%;
+        }
+
+        @keyframes shake-head-left-right {
+
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(5deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(-5deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+
+        }
+
+        #dog {
+            position: absolute;
+            width: 19%;
+            left: 22%;
+            bottom: 3%;
+            animation: shake-head-left-right 6s linear infinite;
+        }
+
+        @keyframes shake-head-right-left {
+
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            25% {
+                -webkit-transform: rotate(-5deg);
+            }
+
+            50% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            75% {
+                -webkit-transform: rotate(5deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+
+        }
+
+        #rabbit {
+            position: absolute;
+            width: 14%;
+            left: 37%;
+            bottom: 3.5%;
+            animation: shake-head-right-left 6s linear infinite;
+        }
+
+        #flower2 {
+            position: absolute;
+            width: 15%;
+            left: 55%;
+            bottom: 3%;
+        }
+
+        #flower3 {
+            position: absolute;
+            width: 12%;
+            right: 22%;
+            bottom: 13%;
+        }
+
+        #glass-mid {
+            position: absolute;
+            width: 35%;
+            right: 10%;
+            bottom: 17%;
+        }
+
+
+        #glass-right1 {
+            position: absolute;
+            width: 15%;
+            right: 20%;
+            bottom: 4%;
+        }
+
+        #stone {
+            position: absolute;
+            width: 15%;
+            right: 18%;
+            bottom: 1%;
+        }
+
+        #berry {
+            position: absolute;
+            width: 12%;
+            right: 16%;
+            bottom: 1%;
+        }
+
+        #glass-right2 {
+            position: absolute;
+            width: 13%;
+            right: 0%;
+            bottom: 2%;
+        }
+
+        #glass-right3 {
+            position: absolute;
+            width: 25%;
+            right: 0%;
+            bottom: 0%;
+        }
+
+
+        #box {
+            position: absolute;
+            width: 36%;
+            right: 1%;
+            bottom: 6%;
+        }
+
+        #plain {
+            position: absolute;
+            width: 100%;
+            margin-top: -95%;
+            margin-left: 3%;
+            text-align: center;
+            font-weight: bold;
+            color: #262626;
+            opacity: 0.9;
+            font-size: 2.9vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #keeper-time {
+            position: absolute;
+            width: 100%;
+            margin-top: -84%;
+            margin-left: 3%;
+            text-align: center;
+            font-weight: bold;
+            color: #262626;
+            opacity: 0.9;
+            font-size: 3.0vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #indicator {
+            width: 100%;
+        }
+
+        #icp {
+            position: absolute;
+            bottom: 1%;
+            color: green;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="asserts/cloud-mid1.png" alt="cloud-mid1" id="cloud-mid1" />
+    <img src="asserts/cloud-mid2.png" alt="cloud-mid2" id="cloud-mid2" />
+    <img src="asserts/sun.png" alt="sun" id="sun" />
+    <img src="asserts/glass-mid.png" alt="glass-mid" id="glass-mid" />
+    <div id="lawn"></div>
+    <div id="lawn1"></div>
+    <img src="asserts/tree.png" alt="tree" id="tree" />
+    <img src="asserts/glass-left1.png" alt="glass-left1" id="glass-left1" />
+    <img src="asserts/glass-left2.png" alt="glass-left2" id="glass-left2" />
+    <img src="asserts/flower.png" alt="flower" id="flower1" />
+    <img src="asserts/dog.png" alt="dog" id="dog" />
+    <img src="asserts/rabbit.png" alt="rabbit" id="rabbit" />
+    <img src="asserts/flower.png" alt="flower" id="flower2" />
+    <img src="asserts/flower.png" alt="flower" id="flower3" />
+    <div id="box">
+        <img src="asserts/indicator.png" alt="indicator" id="indicator">
+        <div id="plain">小郑和小吴已经在一起</div>
+        <div id="keeper-time">0天0时0分0秒</div>
+        <!-- <div id="start-time">2022.09.06</div> -->
+        </img>
+    </div>
+    <img src="asserts/berry.png" alt="berry" id="berry" />
+    <!-- <img src="asserts/glass-right1.png" alt="glass-right1" id="glass-right1" /> -->
+    <!-- <img src="asserts/stone.png" alt="stone" id="stone" /> -->
+    <img src="asserts/glass-right2.png" alt="glass-right2" id="glass-right2" />
+    <img src="asserts/glass-right3.png" alt="glass-right3" id="glass-right3" />
+    <script>
+        var arr = "2022-09-06 20:00:00".split(/[- :]/);//改这里
+        function timer_start() {
+            var start_time = new Date(arr[0], arr[1] - 1, arr[2], arr[3], arr[4], arr[5]);
+            var duration = parseInt(new Date() - start_time) / 1000;
+            var seconds = parseInt(duration % 60);
+            if (seconds < 10)
+                seconds = "0" + seconds;
+            duration = parseInt(duration / 60);
+            var minutes = duration % 60;
+            if (minutes < 10)
+                minutes = "0" + minutes;
+            duration = parseInt(duration / 60);
+            var hours = duration % 24;
+            if (hours < 10)
+                hours = "0" + hours;
+            duration = parseInt(duration / 24);
+            var days = duration;
+            document.getElementById('keeper-time').innerHTML = (days + "天" + hours + "时" + minutes + "分" + seconds + "秒");
+        }
+        window.setInterval(timer_start, 1000);
+        timer_start();
+    </script>
+</body>
+
+</html>
